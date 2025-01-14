@@ -1,0 +1,15 @@
+.body{
+    background-image: url(40726228-calculadora-de-dibujos-animados-patrón-de-fondo-sin-fisuras.jpg);
+}
+
+.caja{
+    margin: 42%;
+    margin-top: 10%;
+	width: 18%;
+	/* background: #3dc208e5; */
+	padding: 20px;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	font-family: 'calibri';
+	font-size: 18px;
+}

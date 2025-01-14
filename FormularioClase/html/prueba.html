@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario2</title>
+    <link rel="stylesheet" type="text/css" href="/ccs/styles.css" />
+    <link rel="icon" href="/ccs/imagenes/ingreso.css (2).jpg" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="PRUEBA.JS"></script>
+  </head>
+  <body class="row1">
+    <section>
+      <h1>En Hora Buena!</h1>
+      <p> <h4> <em> Registra tu formulario </em> </h4> </p>
+      <br />
+      <table id="ready">
+        <tr>
+          <td>
+            <input
+              autofocus
+              class="placeholder"
+              type="text"
+              name="ID"
+              id="ID"
+              placeholder="Identificación"
+            />
+          </td>
+          <td>
+            <input
+              class="placeholder"
+              type="text"
+              name="Nombres_Apellidos"
+              id="N_A"
+              placeholder="Nombres y Apellidos"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="3">Nacionalidad</th>
+          <td>
+            <input type="radio" name="Nacionalidad" id="Colombiano" />
+            Colombiano
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="Nacionalidad" id="Mexicano" /> Mexicano
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="Nacionalidad" id="Otros" /> Otros</td>
+        </tr>
+        <tr>
+          <th rowspan="6">Países Favoritos</th>
+          <td>Canadá <input type="checkbox" name="países" id="Canadá" /></td>
+        </tr>
+        <tr>
+          <td>Perú <input type="checkbox" name="países" id="Perú" /></td>
+        </tr>
+        <tr>
+          <td>
+            Estados Unidos
+            <input type="checkbox" name="países" id="Estados Unidos" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Argentina <input type="checkbox" name="países" id="Argentina" />
+          </td>
+        </tr>
+        <tr>
+          <td>Chile <input type="checkbox" name="países" id="Chile" /></td>
+        </tr>
+        <tr>
+          <td>
+            Republica Dominicana
+            <input type="checkbox" name="países" id="Republica Dominicana" />
+          </td>
+        </tr>
+        <tr>
+          <th>Color Favorito</th>
+          <td>
+            <select class="placeholder" name="Color" id="Color">
+              <option value="" disabled selected>Seleccione un color</option>
+              <option value="Ro">Rojo</option>
+              <option value="Am">Amarillo</option>
+              <option value="Vi">Violeta</option>
+              <option value="Do">Dorado</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+            <th>Departamento</th>
+            <td>
+                <select class="placeholder" name="departamento" id="departamento">
+                    <option value="" disabled selected>Seleccione un departamento</option>
+                    <option value="Cu">Cundinamarca</option>
+                    <option value="Gu">Guainía</option>
+                    <option value="Gua">Guaviare</option>
+                    <option value="Hu">Huila</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              class="placeholder"
+              onclick="iniciar()"
+              type="button"
+              id="Enviar"
+              value="Enviar"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

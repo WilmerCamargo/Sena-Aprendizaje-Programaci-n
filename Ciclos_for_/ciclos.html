@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/"></script>
+</head>
+<body>
+
+    <script>
+
+
+        let Pares=0,Impares=0,SumPares=0,SumImpares=0;
+        for (let f = 1; f <= 10; f++) {
+            if (f % 2==0){
+                SumPares=SumPares+f;
+                Pares=Pares+1;
+            }
+            else{
+                SumImpares=SumImpares+f;
+                Impares=Impares+1;
+            }                
+        }
+
+        document.write("Cantidad Pares "+ Pares + "<br>");
+        document.write("Cantidad ImPares "+ Impares + "<br>");
+        document.write("Sumatoria Pares "+ SumPares + "<br>");
+        document.write("Sumatoria ImPares "+ SumImpares + "<br>");
+
+        let sumatoriaTotal = 0;
+        let totalCount = 0;
+        let menoresQuePromedio = [];
+        let mayoresQuePromedio = [];
+
+        // Bucle para calcular la sumatoria total y el conteo de números
+        for (let f = 1; f <= 10; f++) {
+
+            sumatoriaTotal += f;
+            totalCount++;
+        }
+
+        // Calcular el promedio total
+        let promedioTotal = sumatoriaTotal / totalCount;
+
+        // Determinar cuáles números son mayores y menores que el promedio
+        for (let f = 1; f <= 10; f++) {
+            if (f > promedioTotal) {
+                mayoresQuePromedio.push(f);
+            } else if (f < promedioTotal) {
+                menoresQuePromedio.push(f);
+            }
+        }
+
+        // Mostrar resultados
+        document.write('Sumatoria Total: ' + sumatoriaTotal + '<br>');
+        document.write('Promedio Total: ' + promedioTotal + '<br>');
+        document.write('Números mayores que el promedio: ' + mayoresQuePromedio.join(', ') + '<br>');
+        document.write('Números menores que el promedio: ' + menoresQuePromedio.join(', ') + '<br>');
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Imagenes/Icono.jpg">
+    <title>Empírico</title>
+  </head>
+  <body>
+    <header>
+      "Css"
+      <p>La etiqueta "header", Sirve para el encabezado de la pagina.</p>
+      <p>La etiqueta "nav", sirve para los enlaces de navegación</p>
+      <p>
+        La etiqueta "aside", generalmente lleva información adicional de la
+        pagina que se muestra "A la derecha"
+      </p>
+      <p>
+        La etiqueta "section", permite organizar mejor la información de la
+        pagina por porción de contenido "dependiendo del tema"
+      </p>
+      <p>La etiqueta "article", pueden ir los artículos de la pagina o blog</p>
+      <p>
+        La etiqueta "footer", sirve para la información en pie de pagina "abajo
+        de la pagina"
+      </p>
+    </header>
+    <h1 id="home">Título: Aprendiendo HTML</h1>
+    <!--Asi se hacen los comentarios en HTMl-->
+    <nav>
+      <a href="#intro">Introducción</a>
+      <a href="#etiqueta">Etiquetas</a>
+      <a href="#enlace">Enlaces</a>
+      <a href="#lista">Listas</a>
+    </nav>
+
+    <h2 id="intro">Introducción</h2>
+
+    <img
+      src="Imagenes/que-es-conocimiento-Empirico.jpg"
+      alt="Empirico"
+      width="500"
+      title="que-es-conocimiento-Empirico"
+      usemap="#mapa"
+    />
+    <!--Podemos buscar en la pagina "image-map.net" acá se puede buscar las condenadas de una imagen-->
+    <map name="mapa">
+      <area
+        target="_blank"
+        shape="circle"
+        coords="372,439,35"
+        href="http://127.0.0.1:5500/Imagenes/que-es-conocimiento-Empirico.jpg"
+        alt="Empirico3"
+      />
+
+      <area
+        target="_blank"
+        shape="rest"
+        coords="43,99,813,279"
+        href="http://127.0.0.1:5500/Imagenes/que-es-conocimiento-Empirico.jpg"
+        alt="Empirico2"
+      />
+
+      <area
+        target="_blank"
+        shape="poly"
+        coords="897,529,893,504,997,444,1053,480,1064,531,1075,561,1042,596,925,574"
+        href="http://127.0.0.1:5500/Imagenes/que-es-conocimiento-Empirico.jpg"
+        alt="Empirico1"
+      />
+    </map>
+
+    <p>
+      <a href="Descargas/OneDrive_2024-07-22.zip" target="_blank">Descargar</a>
+    </p>
+
+    <p>
+      <strong>Lorem </strong> <b> ipsum </b>
+      <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank"
+        >dolor,</a
+      >
+      sit amet consectetur adipisicing elit. <br />
+      Quidem rerum libero adipisci in, ipsum, eveniet debitis corrupti ipsam
+      fuga maxime dicta ipsa doloremque obcaecati consectetur id hic corporis
+      repudiandae quis.
+    </p>
+    <hr />
+    <p>
+      <b><i> Lorem </i></b> <em><b>ipsum</b></em> dolor sit amet consectetur
+      adipisicing elit. Sequi, velit. Voluptatem, vero reiciendis magni optio
+      odio ad at neque asperiores amet temporibus sed eum ex voluptas nema
+      maiores tenetur <a href="Register.html" target="_blank"> accusamus. </a>
+    </p>
+
+    <h2>Audios</h2>
+    <br>
+    <audio controls loop muted>
+      <source src="Audios/town.mp3">
+      El navegador no puede reproducir el audio
+    </audio>
+    <audio controls autoplay src="Audios/English's audio.waptt.opus" ></audio>
+
+    <h2>Videos</h2>
+      
+    <video width="320" height="240" autoplay controls loop src="Videos/libertad.mp4"></video>
+    <br> <br>
+    <video controls loop autoplay width="320" height="240">
+      <source src="Videos/libertad.mp4" type="video/mp4">
+      El navegador no puede reproducir el video
+    </video>
+    <br> <br>
+    <iframe width="320" height="240" src="https://www.youtube.com/embed/akFzU5K8VL0?si=Mhaf8N4H6-r4G4C7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h2>Formulario</h2>
+    
+    <form action="" method="post">
+      
+      <fieldset>
+      
+        <legend>Datos del Usuario</legend>
+        
+      <label for="Name">Nombre</label><br>
+      <input type="text" id="Name" name="Name" placeholder="Ingresa tu nombre"></p>
+
+      <label for="email">Correo </label><br>
+      <input type="email" name="email" id="email" required></p>
+
+      <label for="pass">Contraseña</label><br>
+      <input type="password" name="pass" id="pass" autofocus></p>
+
+      <label for="birthday">Fecha de nacimiento</label><br> 
+      <input type="date" id="birthday" name="birthday"></p>
+
+      <label for="cv">Ingresar tu cv</label><br>
+      <input type="file" name="cv" id="cv"></p>
+      
+      <label for="gender">Genero</label><br>
+      <input type="radio" id="male" name="gender" value="male"> 
+      <label for="male">Hombre</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Mujer</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Otro</label><br>
+
+        <textarea name="Descripción" id="Descripción" cols="50" rows="10"></textarea>
+
+      </fieldset>
+
+      <fieldset>
+        <legend >Color favorito</legend>
+
+        <input type="radio" name="Color" id="red" value="red">
+        <label for="red">Rojo</label><br>
+
+        <input type="radio" name="Color" id="blue" value="blue">
+        <label for="blue">Azul</label><br>
+
+        <input type="radio" name="Color" id="Green" value="Green">
+        <label for="Green">Verde</label><br>
+
+        <input type="color" name="Color" id="" ><br>
+
+        <select name="Color2" id="Color2">
+          <option value="red">Rojo</option>
+          <option value="blue">Azul</option>
+          <option value="green">Verde</option>
+        </select>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobbies</legend>
+
+        <input type="checkbox" name="hobby1" id="read" value="read">
+        <label for="read">Leer</label><br>
+
+        <input type="checkbox" name="hobby2" id="dacen" value="dance">
+        <label for="dacen">Bailar</label><br>
+
+        <input type="checkbox" name="hobby3" id="coding" value="coding">
+        <label for="coding">Programar</label><br>
+
+      </fieldset>
+      </p>
+      <input type="submit" name="" id="" value="Listo"></p>
+      <input type="reset" name="" id="" value="Borrar">
+    </form>
+
+
+
+    <h2>Tablas</h2>
+
+    <table border="1">
+      <caption> <h3> Mi Horario </h3></caption>
+      <tr>
+        <th colspan="5">Horario</th>
+        <th colspan="2">Fin de semana</th>
+      </tr>
+      <tr>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Sábado</th>
+        <th>Domingo</th>
+      </tr>
+      <tr>
+        <th rowspan="3">Programar</th rowspan="3">
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Descansar</td>
+        <td>Descansar</td>
+      </tr>
+      <tr>
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Descansar</td>
+        <td>Descansar</td>
+      </tr>
+      <tr>
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Programar</td>
+        <td>Descansar</td>
+        <td>Descansar</td>
+      </tr>
+    </table>
+
+    <h2 id="etiqueta">Etiquetas</h2>
+
+    <ul>
+      <li>Item</li>
+      <li>Item</li>
+      <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+      </ul>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <p>
+      <strong>Lorem </strong> <b> ipsum </b> dolor, sit amet consectetur
+      adipisicing elit. <br />
+      Quidem rerum libero adipisci in, ipsum, eveniet debitis corrupti ipsam
+      fuga maxime dicta ipsa doloremque obcaecati consectetur id hic corporis
+      repudiandae quis.
+    </p>
+
+    <ol type="i">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+
+    <p>
+      <b><i> Lorem </i></b> <em><b>ipsum</b></em> dolor sit amet consectetur
+      adipisicing elit. Sequi, velit. Voluptatem, vero reiciendis magni optio
+      odio ad at neque asperiores amet temporibus sed eum ex voluptas nemo
+      maiores tenetur accusamus.
+    </p>
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        HTML es Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+        ratione animi placeat ut molestias ad iure. Dolorum provident maxime
+        dolorem inventore minima dicta animi tempore esse nesciunt fugit, et ad?
+      </dd>
+      <dt>CSS</dt>
+      <dd>
+        CCS es Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex
+        est iure error velit labore, dolor ipsam dolorem impedit dicta itaque,
+        alias assumenda, ipsa quaerat magnam et illo tenetur facilis!
+      </dd>
+      <dt>Javascript</dt>
+      <dd>
+        Javascript es Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Qui, voluptatum repellendus? Id, expedita minus, veniam tempora
+        architecto ut, quae commodi voluptatibus ea quos molestias aperiam. Sed
+        veniam, quia molestiae deleniti quaerat.
+      </dd>
+    </dl>
+
+    <h2 id="enlace">Enlaces</h2>
+
+    <p>
+      <strong>Lorem </strong> <b> ipsum </b> dolor, sit amet consectetur
+      adipisicing elit. <br />
+      Quidem rerum libero adipisci in, ipsum, eveniet debitis corrupti ipsam
+      fuga maxime dicta ipsa doloremque obcaecati consectetur id hic corporis
+      repudiandae quis.
+    </p>
+
+    <p>
+      <b><i> Lorem </i></b> <em><b>ipsum</b></em> dolor sit amet consectetur
+      adipisicing elit. Sequi, velit. Voluptatem, vero reiciendis magni optio
+      odio ad at neque asperiores amet temporibus sed eum ex voluptas nemo
+      maiores tenetur accusamus.
+    </p>
+
+    <h2 id="lista">Listas</h2>
+
+    <p>
+      <strong>Lorem </strong> <b> ipsum </b> dolor, sit amet consectetur
+      adipisicing elit. <br />
+      Quidem rerum libero adipisci in, ipsum, eveniet debitis corrupti ipsam
+      fuga maxime dicta ipsa doloremque obcaecati consectetur id hic corporis
+      repudiandae quis.
+    </p>
+
+    <p>
+      <b><i> Lorem </i></b> <em><b>ipsum</b></em> dolor sit amet consectetur
+      adipisicing elit. Sequi, velit. Voluptatem, vero reiciendis magni optio
+      odio ad at neque asperiores amet temporibus sed eum ex voluptas nemo
+      maiores tenetur accusamus.
+    </p>
+    <nav>
+      <a href="#home">Home</a>
+    </nav>
+
+    <hr />
+
+    <h1>Gráficos SVG</h1>
+
+    <svg width="500" height="500">
+      <circle
+        cx="150"
+        cy="150"
+        r="100"
+        stroke="Green"
+        stroke-width="4"
+        fill="pink"
+      ></circle>
+      <line
+        x1="150"
+        y1="150"
+        x2="250"
+        y2="150"
+        stroke="Green"
+        stroke-width="4"
+      ></line>
+      <text x="150" y="140" fill="red">r=100</text>
+    </svg>
+  </body>
+</html>

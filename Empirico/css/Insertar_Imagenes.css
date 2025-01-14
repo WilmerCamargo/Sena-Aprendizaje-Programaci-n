@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+    background-image:url("https://images.unsplash.com/photo-1633627243409-740c62651c5d?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.photo {
+        background-image: url("/Imagenes/que-es-conocimiento-Empirico.jpg");
+    width: 1000px;
+    height: 500px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.4)), url("/Imagenes/que-es-conocimiento-Empirico.jpg");
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.profile {
+    background-image: url(https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww);
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-position: 45% 22%;
+    border-radius: 20%  ;    
+}

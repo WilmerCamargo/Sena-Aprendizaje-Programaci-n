@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+    <link rel="stylesheet" href="./prueba.css">
+</head>
+<body>
+    
+    <!-- Formulario para ingresar la cédula y mostrar la información -->
+    <form class="main-container" id="datosForm">
+        <fieldset>
+        <h1>La Universidad Iberoamericana de Chile</h1>
+        
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" required>
+
+        <button type="button" onclick="buscarDatos()">Buscar</button><br><br>
+
+        <h2>Resultado:</h2>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" readonly><br>
+
+        <label for="semestre">Semestre:</label>
+        <input type="text" id="semestre" readonly><br>
+
+        <label for="asignatura">Asignatura:</label>
+        <input type="text" id="asignatura" readonly><br>
+
+        <label for="notas1">Nota 1:</label>
+        <input type="text" id="notas1" readonly><br>
+        
+        <label for="notas2">Nota 2:</label>
+        <input type="text" id="notas2" readonly><br>
+        
+        <label for="notas3">Nota 3:</label>
+        <input type="text" id="notas3" readonly><br>
+        
+        <label for="notas4">Nota 4:</label>
+        <input type="text" id="notas4" readonly><br>
+
+        <label for="promedio">Promedio:</label>
+        <input type="text" id="promedio" readonly><br>
+
+        </fieldset>
+    </form>
+
+    <script src="/prueba3.js" type="text/javascript"></script>
+</body>
+</html>

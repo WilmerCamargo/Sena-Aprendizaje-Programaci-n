@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora</title>
+    <link rel="stylesheet" type="text/css" href="calculadora.css" />
+  </head>
+
+  <body class="body">
+    <table class="caja">
+      <tr>
+        <td>Operaciones Aritméticas</td>
+      </tr>
+      <tr>
+        <td>Numero 1 <input type="number" name="Numero" id="Num1" /></td>
+      </tr>
+      <tr>
+        <td>Numero 2 <input type="number" name="Numero" id="Num2" /></td>
+      </tr>
+      <tr>
+        <td><input name="Operaciones" type="radio" id="sum" /> Sumar</td>
+      </tr>
+      <tr>
+        <td><input name="Operaciones" type="radio" id="mult" /> Multiplicar</td>
+      </tr>
+      <tr>
+        <td><input name="Operaciones" type="radio" id="res" /> Restar</td>
+      </tr>
+      <tr>
+        <td><input name="Operaciones" type="radio" id="div" /> Dividir</td>
+      </tr>
+      <tr>
+        <td><button id="calcular">calcular</button></td>
+      </tr>
+      <tr>
+        <td>
+          Resultado <input type="number" id="Resul" readonly />
+        </td>
+      </tr>
+      <tr>
+        <td ><button id="limpio">limpiar</button></td>
+      </tr>
+    </table>
+    <script src="calculadora.js"></script>
+  </body>
+</html>

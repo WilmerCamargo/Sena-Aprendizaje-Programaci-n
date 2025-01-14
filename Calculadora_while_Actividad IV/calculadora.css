@@ -1,0 +1,21 @@
+.body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEbRxw4hkVkLgD7kwzccARBAmsjn02ld5A_g&s);
+}
+
+.caja{
+    margin: 42%;
+    margin-top: 10%;
+	width: 18%;
+	/* background: #eff0efe5; */
+	/* background-image: url(Imagen\ caculadora.jpg); */
+	padding: 20px;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	font-family: 'calibri';
+	font-size: 18px;
+}
+
+.button{
+	display: flex; 
+	justify-content: center;
+}

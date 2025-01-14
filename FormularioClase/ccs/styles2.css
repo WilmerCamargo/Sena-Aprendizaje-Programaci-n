@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #34d6e2d8;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+section{
+    background-color: #5ff14cc7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.76);
+    padding: 20px
+    display: inline-block;
+    margin: 100px auto;
+    max-width: 600px;
+    }
+
+h1{
+    font-size: 2.0em;
+    color: #333;
+}
+
+.mensaje {
+    font-size: 1.3em;
+    color: #db2020ec;
+    margin-bottom: 20px;
+}

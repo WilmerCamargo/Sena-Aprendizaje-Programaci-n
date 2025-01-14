@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function calcularTabla() {
+            let valor = parseInt(prompt("Ingrese Valor de la Tabla a multiplicar "));
+            let desde = parseInt(prompt("Ingrese valor inicial del rango"));
+            let hasta = parseInt(prompt("Ingrese valor final del rango"));
+
+            for (let f = desde; f <= hasta ; f++) {
+                let tabla = f * valor;
+                document.write(valor + " * " + f + " = " + tabla + '<br>')
+
+            }
+        }
+      calcularTabla();
+      </script>
+      </body>
+</html>

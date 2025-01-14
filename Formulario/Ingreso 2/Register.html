@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+	<section class="MiEstilo">
+		<h4>Registro de Clientes</h4>
+		<form id="f1">
+			<input class="caja" type="text" name="nombres" id="nombres" placeholder="Nombres">
+			<input class="caja" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+			<input min="0" class="caja" type="number" name="ID" Id="ID" placeholder="Identificación">
+			<input class="caja" type="email" name="correo" id="correo" placeholder="Correo Electrónico">
+			<input class="caja" type="password" name="clave" id="clave" placeholder="Contraseña 'entre 7 a 10 dígitos'">
+			<input class="caja" type="password" name="clave2" id="clave2" placeholder="Confirmar Contraseña">
+			<p> Aceptar <a class="a" target="_blank" href="https://herramientas.datos.gov.co/terminos"> Términos y
+					condiciones </a>
+				<input class="aceptar" type="checkbox" name="aceptar" id="aceptar">
+			</p>
+			<button class="botones" onclick="prueba()" type="submit"> Registrar</button>
+			<a href="ingreso.html"> Iniciar Sesión </a>
+		</form>
+	</section>
+	<script src=Register.js></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" type="text/css" href="/ccs/styles2.css">
+    <link rel="icon" href="/ccs/imagenes/ingreso.css (2).jpg">
+    <script src="/js/index.js"></script>
+</head>
+<body>
+    <section class="section">
+        <h1>Bienvenido</h1>
+        <div id="Bienvenida" class="mensaje"></div>
+        <p> Gracias por el registro, es bueno tenerte en nuestro equipo.</p>
+    </section>
+    <script>
+         // Recuperar el nombre del localStorage
+        var nombres = localStorage.getItem ('N_A');
+        var Color = localStorage.getItem ('Color');
+        var departamento = localStorage.getItem('departamento');
+
+        var colores = {
+            "Ro": "Rojo",
+            "Am": "Amarillo",
+            "Vi": "Violeta",
+            "Do": "Dorado"
+        };
+
+        var departamentos = {
+            "Cu": "Cundinamarca",
+            "Gu": "Guainía",
+            "Gua": "Guaviare",
+            "Hu": "Huila"
+        };
+        var capitales = {
+            "Cu": "Bogotá",
+            "Gu": "Inírida",
+            "Gua": "San José del Guaviare",
+            "Hu": "Neiva"
+        };
+
+        if (nombres) {
+            var capital = capitales[departamento];
+            var Color = colores[Color];
+            var departamento = departamentos[departamento];
+            var mensaje = 'hola ' + nombres + ', vemos que tu color favorito es ' + Color + ', <br>' + 'Tu departamento es ' + departamento + ' y la capital del mismo es ' + capital + '.';
+            document.getElementById('Bienvenida').innerHTML = mensaje;
+        } else {
+            document.getElementById('Bienvenida').innerHTML = 'Hola, usuario nuevo';
+        }
+    </script>
+</body>
+</html>

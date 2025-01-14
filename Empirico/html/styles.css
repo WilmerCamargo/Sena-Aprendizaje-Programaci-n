@@ -1,0 +1,29 @@
+/*  body{
+   background-color: cadetblue; 
+  background-image: url(https://images.unsplash.com/photo-1721698657228-e0b2aa7c641f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}*/
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.div {
+  padding-left: 5px;
+}
+
+.Static {
+  background-color: grey;
+  font-size: 20px;
+  position: static;
+
+}
+
+.Relative {
+  background-color: lightcyan;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}

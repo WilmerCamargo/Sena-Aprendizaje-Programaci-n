@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CEET Regional Bogotá</title>
+    <style type="text/css">
+        #MiTabla {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #MiTabla td,
+        #MiTabla {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        #MiTabla tr:nth-child(even) {
+            background-color: #454545;
+        }
+
+        #MiTabla {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #454545;
+            color: white;
+            width: 70%;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function validar() {
+            var ElNombre = document.MiForm.Nom.value;
+            var ElApellido = document.MiForm.Ape.value;
+            var opciones = document.getElementsByName("ElGenero");
+            var seleccion = false;
+            if (ElNombre.length == 0) {
+                alert('Campo Nombre Obligatorio');
+                return false;
+            }
+            else {
+                if (ElApellido.length == 0) {
+                    alert('Campo Apellido es Obligatorio');
+                    return false;
+                }
+                else {
+
+                    for (var i = 0; i < opciones.length; i++) {
+                        if (opciones[i].checked) {
+                            seleccion = true;
+                            break;
+                        }
+                    }
+
+                    if (!seleccion) {
+                        alert("Debe seleccionar el Género");
+                        return false;
+                    }
+                }
+
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="MiForm" id="MiForm" onSubmit="return validar()">
+        <table border="0" align="center" id="MiTabla">
+            <tr>
+                <td align="right">* Nombres</td>
+                <td><input type="text" placeholder="Ingrese Nombres" size="30" name="Nom" id="Nom"></td>
+                <td>* Apellidos</td>
+                <td><input type="text" size="30" placeholder="Ingrese Apellidos" name="Ape" id="Ape"></td>
+            </tr>
+            <tr>
+                <td align="right">* Correo electronico</td>
+                <td><input type="email" placeholder="email" size="30"></td>
+                <td>* Contraseña</td>
+                <td><input type="password" size="30" placeholder="Ingrese Contraseña"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="right">* Género </td>
+                <td>Femenino <input type="radio" name="ElGenero" id="fem"></td>
+            </tr>
+            <tr>
+                <td>Masculino <input type="radio" name="ElGenero" id="mas"></td>
+            </tr>
+            <tr>
+                <td>Otro <input type="radio" name="ElGenero" id="Ot"></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center"><input type="submit" name="boton" value="Enviar"></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>

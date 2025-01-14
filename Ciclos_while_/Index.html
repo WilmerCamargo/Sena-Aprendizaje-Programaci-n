@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let f=1;Pares=0;Impares=0;SumPares=0;SumImpares=0;
+        
+        while (f <= 10) {
+            document.write("N. " + f + "<br>");
+            f++;   
+        }
+        document.write('////////////////////////////////////');
+        
+        let F=1;Pares=0;Impares=0;SumPares=0;SumImpares=0;
+
+        while (F <= 10) {
+            if (F % 2 == 0) {
+                Pares++;
+                SumPares += F;
+            } else {
+                Impares++;
+                SumImpares += F;
+            }
+            F++;
+    }                           
+        
+
+        document.write("<br>Pares: " + Pares + "<br>Suma Pares: " + SumPares + "<br>Impares: " + Impares + "<br>Suma Impares: " + SumImpares);
+
+        let V=1;Total=0;Contar=0;PromedioMenor=[];PromedioMayor=[];
+        
+        while (V <= 10) {
+            Total += V;
+            Contar++;
+            if (V <= 5) {
+                //PromedioMenor += V;
+                PromedioMenor.push(V);
+            } else {
+                //PromedioMayor += V;
+                PromedioMayor.push(V);
+            }
+            V++;
+        }
+
+        document.write("<br>////////////////////////////////////"); 
+        document.write("<br>Total: " + Total  + "<br>Promedio: " + Total/Contar  + "<br>Promedio Menores que 5: " + PromedioMenor.join(", ") + "<br>Promedio Mayores que 5: " + PromedioMayor.join(", "));
+
+    </script>
+</body>
+</html>
