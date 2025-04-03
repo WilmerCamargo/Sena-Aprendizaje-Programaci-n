@@ -1,15 +1,18 @@
+// Crear una clase y metodos
+
+
 public class Main {
-    public static void main(String[] args) {
-        String[] personajes = {"Goku", "Vegeta", "Chanchito feliz"};
+    public static void main(String[] args){
+        User user = new User("Nicolas");
+        // user.name = ; // Se puede acceder a sus propiedades del objeto de la otra clase con el punto (.)
+
+        User user1 = new User("Felipe");
 
 
-//        for (int i = 0; i < personajes.length; i++) {
-//            System.out.println(personajes[i]);
-//        }
-        // For each
+        user.saludable();
+        user1.saludable();
 
-        for (String personaje: personajes) {
-            System.out.println(personaje);
-        }
+
+        System.out.println(User.tableName);
     }
 }
